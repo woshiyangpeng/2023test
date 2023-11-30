@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			function q() {
+				var gallery = mui('.mui-slider');
+				gallery.slider({
+					interval: 500
+				});
+			};
+			mui.ready(q)
+		</script>
+	</head>
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">首页</h1>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="img/bann04.png">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/bann02.png">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/bann03.png">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/bann04.png">
+						</a>
+					</div>
+					<!-- 第四张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/bann02.png">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="img/bann01.png">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+
+
+			<div class="mui-input-row mui-search">
+				<input type="search" class="mui-input-clear" placeholder="搜索">
+			</div>
+
+
+
+
+			<ul class="mui-table-view mui-grid-view mui-grid-3 mui-ma">
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="#" class="">
+						<img src="img/kmlb.png" alt="">
+						<div class="mui-media-body">书本</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="#">
+						<img src="img/yxgs.png" alt="">
+						<div class="mui-media-body">官帽</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="#">
+						<img src="img/sbyx.png" alt="">
+						<div class="mui-media-body">联系人</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="#">
+						<img src="img/more.png" alt="">
+						<div class="mui-media-body">设置</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="#">
+						<img src="img/qzxq.png" alt="">
+						<div class="mui-media-body">记录</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="#">
+						<img src="img/wzjz.png" alt="">
+						<div class="mui-media-body">爱党之心</div>
+					</a>
+				</li>
+			</ul>
+
+
+			<div style="font-size: 20px;color: red;align-items: center;justify-content: center;"><span>新闻报告</span></div>
+		</div>
+
+
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<img class="mui-media-object mui-pull-left" src="img/3(1).jpg">
+					<div class="mui-media-body">
+						幸福
+						<p class="mui-ellipsis mui-">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<img class="mui-media-object mui-pull-left" src="img/2(1).jpg">
+					<div class="mui-media-body">
+						我的小破屋
+						<p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.我的小破屋就像我的通话世界一样</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<img class="mui-media-object mui-pull-left" src="img/1(1).jpg">
+					<div class="mui-media-body">
+						火炉
+						<p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+
+
+		<div style="text-align: center;font-size: 20px;"><span>加载更多.....</span></div>
+	</body>
+
+	<nav class="mui-bar mui-bar-tab">
+		<a class="mui-tab-item mui-active" class="mui">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label ">首页</span>
+		</a>
+		<a class="mui-tab-item" onclick="window.location='wu1.html'">
+			<span class="mui-icon mui-icon-email"></span>
+			<span class="mui-tab-label">公益</span>
+		</a>
+		<a class="mui-tab-item">
+			<span class="mui-icon mui-icon-email"></span>
+			<span class="mui-tab-label">数据分析</span>
+		</a>
+		<a class="mui-tab-item">
+			<span class="mui-icon mui-icon-contact"></span>
+			<span class="mui-tab-label">心得</span>
+		</a>
+		<a class="mui-tab-item" onclick="window.location='yirenzheng.html'">
+			<span class="mui-icon mui-icon-gear"></span>
+			<span class="mui-tab-label">我的</span>
+		</a>
+	</nav>
+	</div>
+	<script type="text/javascript">
+	</script>
+	</body>
+</html>
