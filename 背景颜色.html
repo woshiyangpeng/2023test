@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            width: 30px;
+            height: 30px;
+            background-color: rgba (0, 0, 0, 0.2);
+
+        }
+/* 背景的位置 */
+        .nn {
+            width: 700px;
+            height: 700px;
+            background-color: bisque;
+            background-image: url(img/1张一寸照.jpg);
+            background-repeat: no-repeat;
+            /* 图片的方向右边 */
+            /* background-position: right 0;  */
+            /* 图片右下面 */
+            /* background-position: right bottom; */
+            /*图片 垂直居中 */
+            background-position: center center;
+        }
+        /* 背景的复合属性 */
+        .bb{
+width: 600px;
+height: 600px;
+background: peru url(img/1张一寸照.jpg) no-repeat center bottom;
+background-position: 150px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>我是傻逼</div>
+    <div class="nn"></div>
+    <div class="bb"></div>
+</body>
+
+</html>
